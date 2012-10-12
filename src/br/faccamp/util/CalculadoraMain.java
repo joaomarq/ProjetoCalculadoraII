@@ -9,13 +9,5 @@ public class CalculadoraMain {
 	 */
 	public static void main(String[] args){
 		Calculadora calculadora = new Calculadora();
-		
-		/*int a = 1;
-		if (a==1) {
-			
-		} else {
-
-		}*/
-
 	}
 }
