@@ -64,7 +64,6 @@ public class Calculadora  {
 	}
 
 	public void processaMaisOuMenos() {
-		// ********** ARRUMAR O METODO PARA O SEGUNDO NUMERO!!! *************
 		String conteudo = display.getConteudo();
 		operacoes = new OperacaoProcessaMM(display.getConteudo());
 		display.limpa();
@@ -135,7 +134,7 @@ public class Calculadora  {
 	}
 		
 
-	public void processaUm() throws IOException {
+	public void processaUm(){
 		display.atualiza("1");
 		
 	}
@@ -161,7 +160,7 @@ public class Calculadora  {
 		
 	}
 
-	public void processaZero() throws IOException {
+	public void processaZero(){
 		display.atualiza("0");
 	}
 
@@ -191,21 +190,6 @@ public class Calculadora  {
 		operacoes = new OperacaoDeSoma(display.getConteudo());
 		display.limpa();
 	}
-	
-	public void CriaCsv() throws IOException{
-		try{
-			File file = new File("C:\\PastaJava\\Arquivo.csv");
-			FileWriter write = new FileWriter(file, true);
-			PrintWriter pWriter = new PrintWriter(write);
-			//String conteudo = display.getConteudo();
-			pWriter.println(display.getConteudo());
-			//pWriter.println(operacao.calcula(conteudo));
-			//pWriter.println(2);		
-			pWriter.flush();
-			pWriter.close();
-		} catch(IOException e){
-		}
-	}	
 
 
 }
