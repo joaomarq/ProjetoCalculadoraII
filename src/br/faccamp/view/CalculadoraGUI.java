@@ -1,9 +1,5 @@
 package br.faccamp.view;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.IOException;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
@@ -228,12 +224,8 @@ public class CalculadoraGUI {
 		JButton buttonUm = new JButton("1");
 		buttonUm.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				try {
-					calculadora.processaUm();
-				} catch (IOException e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				}
+			   calculadora.processaUm();
+
 			}
 		});
 		buttonUm.setBounds(45, 280, 63, 39);
@@ -278,12 +270,8 @@ public class CalculadoraGUI {
 		JButton buttonZero = new JButton("0");
 		buttonZero.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				try {
-					calculadora.processaZero();
-				} catch (IOException e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				}
+				calculadora.processaZero();
+
 			}
 		});
 		buttonZero.setBounds(45, 322, 63, 39);
