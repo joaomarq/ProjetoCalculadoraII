@@ -1,10 +1,5 @@
 package br.faccamp.domain;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-
 import br.faccamp.view.CalculadoraGUI;
 
 public class Calculadora  {
